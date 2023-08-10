@@ -1,0 +1,27 @@
+from PyQt5.QtWidgets import *
+app = QApplication([])
+window = QWidget ()
+window.resize(500, 500)
+quest = QLabel("Скільки учнів в групі?")
+ans1 = QRadioButton("8")
+ans2 = QRadioButton("12")
+ans3 = QRadioButton("10")
+ans4 = QRadioButton("6")
+mainLine = QVBoxLayout()
+
+mainLine.addWidget (quest)
+h1 = QHBoxLayout()
+h2 = QHBoxLayout()
+h1.addWidget(ans1)
+h1.addWidget(ans2)
+h2.addWidget(ans3)
+h2.addWidget(ans4)
+mainLine.addLayout(h1)
+mainLine.addLayout(h2)
+def show win():
+    victory win = QMessageBox()
+    victory win.setText("Вірно!\пВи виграли гіроскутер")
+    victory win.exec
+window.setLayout(mainLine)
+window.show()
+app.exec()
